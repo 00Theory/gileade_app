@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="310.81dp"
+    android:height="544.58dp"
+    android:viewportWidth="310.81"
+    android:viewportHeight="544.58">
+  <path
+      android:pathData="M265.61,45.2h0a154.29,154.29 0,0 0,-218.22 0L45.2,47.38A154.32,154.32 0,0 0,31.41 249.81L155,544.58 279.7,249.81C326,188.37 320,99.61 265.61,45.2ZM155,189.58a52,52 0,1 1,52 -52A52,52 0,0 1,155 189.58Z"
+      android:fillColor="@color/gileade_tema_fundo_link"/>
+</vector>

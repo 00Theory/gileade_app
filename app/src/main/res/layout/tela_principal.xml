@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp"
+            >
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="2dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/perfil_icone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.25"
+                        app:layout_constraintHeight_max="160dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/perfil_icone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+                    <TextView
+                        android:id="@+id/nome_perfil"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.3"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.25"
+                        android:autoSizeMaxTextSize="32dp"
+                        android:autoSizeMinTextSize="12dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Nome"
+                        app:layout_constraintBottom_toTopOf="@id/pontos_perfil"
+                        app:layout_constraintStart_toEndOf="@id/perfil_icone"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/pontos_perfil"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.3"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.25"
+                        android:autoSizeMaxTextSize="32dp"
+                        android:autoSizeMinTextSize="12dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Pontos:"
+                        app:layout_constraintStart_toEndOf="@id/perfil_icone"
+                        app:layout_constraintBottom_toTopOf="@id/cash_perfil"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/cash_perfil"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.3"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.25"
+                        android:autoSizeMaxTextSize="32dp"
+                        android:autoSizeMinTextSize="12dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Cash:"
+                        app:layout_constraintStart_toEndOf="@id/perfil_icone"
+                        app:layout_constraintBottom_toTopOf="@id/nivel_perfil"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/nivel_perfil"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.3"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.25"
+                        android:autoSizeMaxTextSize="32dp"
+                        android:autoSizeMinTextSize="12dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Nível:"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/perfil_icone"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/pontos_valor"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.3"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.25"
+                        android:autoSizeMaxTextSize="32dp"
+                        android:autoSizeMinTextSize="12dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="0"
+                        app:layout_constraintStart_toEndOf="@id/pontos_perfil"
+                        app:layout_constraintBottom_toTopOf="@id/cash_perfil"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/cash_valor"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.3"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.25"
+                        android:autoSizeMaxTextSize="32dp"
+                        android:autoSizeMinTextSize="12dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="0"
+                        app:layout_constraintStart_toEndOf="@id/cash_perfil"
+                        app:layout_constraintBottom_toTopOf="@id/nivel_perfil"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/nivel_valor"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="0dp"
+                        app:layout_constraintWidth_percent="0.3"
+                        android:layout_height="0dp"
+                        app:layout_constraintHeight_percent="0.25"
+                        android:autoSizeMaxTextSize="32dp"
+                        android:autoSizeMinTextSize="12dp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Contribuidor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/nivel_perfil"
+                        ></TextView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_lix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:background="@color/gileade_texto_titulo"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icone_lix"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.25"
+                        app:layout_constraintHeight_max="200dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/icone_gileade_laranja"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:autoSizeMinTextSize="48sp"
+                        android:autoSizeMaxTextSize="160sp"
+                        android:autoSizeTextType="uniform"
+                        android:textAlignment="center"
+                        android:text="LIX"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="@color/lix_laranja"
+                        android:shadowColor="#000"
+                        android:shadowRadius="8"
+                        android:shadowDy="5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/icone_lix"
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:background="@drawable/gradient_cash"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icone_cash"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.25"
+                        app:layout_constraintHeight_max="200dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/camada_7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:autoSizeMinTextSize="48sp"
+                        android:autoSizeMaxTextSize="160sp"                        android:autoSizeTextType="uniform"
+                        android:textAlignment="center"
+                        android:text="Cash"
+                        android:textSize="42dp"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/lato_bold"
+                        android:shadowColor="#000"
+                        android:shadowRadius="8"
+                        android:shadowDy="5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/icone_cash"
+                        app:layout_constraintTop_toTopOf="parent"></TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_contribuicao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gileade_tema_fundo_link"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/icone_contribuicao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.25"
+                        app:layout_constraintHeight_max="200dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/camada_7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:autoSizeMaxTextSize="160sp"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeTextType="uniform"
+                        android:gravity="center"
+                        android:shadowColor="#000"
+                        android:shadowDy="5"
+                        android:shadowRadius="8"
+                        android:text="Contribuição"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/lato_bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHeight_percent="0.6"
+                        app:layout_constraintStart_toEndOf="@+id/icone_contribuicao"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_max="1280dp"
+                        app:layout_constraintWidth_min="120dp"
+                        app:layout_constraintWidth_percent="0.6"></TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_mapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFAFA"
+                    android:padding="12dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/icone_mapa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.25"
+                        app:layout_constraintHeight_min="80dp"
+                        app:layout_constraintHeight_max="120dp"
+                        android:adjustViewBounds="true"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/alfinete"
+                        >
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:autoSizeMaxTextSize="160sp"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeTextType="uniform"
+                        android:gravity="center"
+                        android:shadowColor="#CCC"
+                        android:shadowDy="5"
+                        android:shadowRadius="8"
+                        android:text="Lixeiras Smart"
+                        android:textColor="@color/gileade_tema_fundo_link"
+                        android:fontFamily="@font/lato_bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHeight_percent="0.6"
+                        app:layout_constraintStart_toEndOf="@+id/icone_mapa"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_max="1280dp"
+                        app:layout_constraintWidth_min="120dp"
+                        app:layout_constraintWidth_percent="0.6"></TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+[
+  {
+    "nome" : "placa-mãe",
+    "id" : 0,
+    "preco" : "R$ 200,00",
+    "reutilizavel" : true,
+    "reciclavel" : true,
+    "urlPhoto" : "www.google.com.br"
+  }
+]

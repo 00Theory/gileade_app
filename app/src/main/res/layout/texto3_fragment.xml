@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="vertical"
+    >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginHorizontal="12dp"
+            >
+
+                <TextView
+                    android:nestedScrollingEnabled="true"
+                    android:id="@+id/texto1"
+                    android:text="Além disso, possui as seguintes atividades: CRC (Centro de Recondicionamento de Computadores), o
+Cyber Pop Sustentável (Moeda Sustentável) e o Espaço Maker (Laboratório de criação usando lixo eletrônico).
+Todo nosso espaço é construído com lixo eletrônico e os alunos participam das ideias e da execução. Hoje ofertamos tudo isso às crianças e aos adolescentes da periferia do bairro de Águas Lindas, próximo ao lixão do Aurá, região metropolitana do estado do Pará."
+                    android:textColor="@color/gileade_tema_fundo_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="880dp"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeMaxTextSize="32sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/lato_bold"
+                    android:shadowDy="1"
+                    android:shadowDx="0"
+                    android:shadowRadius="0.3"
+                    android:shadowColor="@color/white"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="10dp"
+                    android:lineSpacingMultiplier="1.2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+
+                </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

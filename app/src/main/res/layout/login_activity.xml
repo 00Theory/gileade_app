@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/x_fechar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_min="42dp"
+        app:layout_constraintWidth_max="80dp"
+        app:layout_constraintHeight_min="42dp"
+        app:layout_constraintHeight_max="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:layout_constraintBottom_toTopOf="@+id/cv_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_cadastro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.6"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        android:focusableInTouchMode="true"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/logoGileade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_card_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/cadastro_nome"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="32dp"-->
+            <!--                android:layout_marginRight="32dp"-->
+            <!--                android:ems="17"-->
+            <!--                android:hint="Nome"-->
+            <!--                android:inputType="textCapWords"-->
+            <!--                android:textColor="@color/gileade_texto_titulo"-->
+            <!--                android:textSize="16sp"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/texto_cadastre_se" />-->
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/cadastro_sobrenome"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="32dp"-->
+            <!--                android:layout_marginRight="32dp"-->
+            <!--                android:ems="17"-->
+            <!--                android:hint="Sobrenome"-->
+            <!--                android:inputType="textCapWords"-->
+            <!--                android:textColor="@color/gileade_texto_titulo"-->
+            <!--                android:textSize="16sp"-->
+            <!--                app:layout_constraintBottom_toTopOf="@id/cadastro_email"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/cadastro_nome" />-->
+
+            <TextView
+                android:id="@+id/texto_entreNaSuaConta"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.1"
+                android:textAlignment="center"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Entre com sua conta"
+                android:autoSizeMinTextSize="16sp"
+                android:autoSizeMaxTextSize="36sp"
+                android:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toTopOf="@id/cadastro_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/cl_card_content" />
+
+            <EditText
+                android:id="@+id/cadastro_email"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="8dp"
+                android:autoSizeMaxTextSize="36sp"
+                android:autoSizeMinTextSize="16sp"
+                android:autoSizeTextType="uniform"
+                android:ems="25"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="Nome de usuário ou email"
+                android:inputType="text"
+                android:textColor="@color/gileade_texto_titulo"
+                app:layout_constraintBottom_toTopOf="@+id/cadastro_senha"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/texto_entreNaSuaConta" />
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/cadastro_cpf"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="32dp"-->
+            <!--                android:layout_marginRight="32dp"-->
+            <!--                android:ems="17"-->
+            <!--                android:hint="CPF"-->
+            <!--                android:inputType="number"-->
+            <!--                android:maxLength="14"-->
+            <!--                android:textColor="@color/gileade_texto_titulo"-->
+            <!--                android:textSize="16sp"-->
+            <!--                app:layout_constraintBottom_toTopOf="@id/cadastro_nascimento"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/cadastro_email" />-->
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/cadastro_nascimento"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="32dp"-->
+            <!--                android:layout_marginRight="32dp"-->
+            <!--                android:ems="17"-->
+            <!--                android:hint="Data de Nascimento"-->
+            <!--                android:inputType="date"-->
+            <!--                android:maxLength="10"-->
+            <!--                android:textColor="@color/gileade_texto_titulo"-->
+            <!--                android:textSize="16sp"-->
+            <!--                app:layout_constraintBottom_toTopOf="@id/cadastro_senha"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/cadastro_cpf" />-->
+
+            <EditText
+                android:id="@+id/cadastro_senha"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="12dp"
+                android:autoSizeMaxTextSize="36sp"
+                android:autoSizeMinTextSize="16sp"
+                android:autoSizeTextType="uniform"
+                android:ems="25"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/gileade_texto_titulo"
+                app:layout_constraintBottom_toTopOf="@id/esqueci_senha"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadastro_email" />
+
+            <TextView
+                android:id="@+id/esqueci_senha"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:autoSizeMaxTextSize="32sp"
+                android:autoSizeMinTextSize="16sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/montserrat_regular"
+                android:padding="12dp"
+                android:text="Esqueci a senha"
+                android:textColor="@color/gileade_tema_fundo_link"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.12"
+                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cadastro_senha">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/botao_login"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginVertical="8dp"
+                android:autoSizeMaxTextSize="32sp"
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/gileade_tema_fundo_link"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Login"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/aindaNaoCriou"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_max="80dp"
+                app:layout_constraintHeight_min="24dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/esqueci_senha"
+                app:layout_constraintWidth_max="160dp"
+                app:layout_constraintWidth_min="32dp" />
+
+            <TextView
+                android:id="@+id/aindaNaoCriou"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:autoSizeMaxTextSize="32sp"
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Não tem uma conta?"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@id/link_cadastre_se"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/botao_login"
+                app:layout_constraintWidth_percent="0.5" />
+
+            <TextView
+                android:id="@+id/link_cadastre_se"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="4dp"
+                android:autoSizeMaxTextSize="32sp"
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Cadastre-se"
+                android:textAlignment="center"
+                android:textColor="@color/gileade_tema_fundo_link"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aindaNaoCriou"
+                app:layout_constraintWidth_percent="0.5"
+                app:layout_constraintHeight_percent="0.1"/>
+
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/cadastro_confirmarSenha"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="32dp"-->
+            <!--                android:layout_marginRight="32dp"-->
+            <!--                android:ems="17"-->
+            <!--                android:hint="Confirmar Senha"-->
+            <!--                android:inputType="textPassword"-->
+            <!--                android:maxLines="1"-->
+            <!--                android:textColor="@color/gileade_texto_titulo"-->
+            <!--                android:textSize="16sp"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/cadastro_senha" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/lista_info"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/logoGileade"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/cv_cadastro"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--        />-->
+
+
+    <ImageView
+        android:id="@+id/logoGileade"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:contentDescription="logo gileade"
+        android:src="@drawable/camada_7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_cadastro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

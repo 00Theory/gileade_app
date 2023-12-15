@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="vertical"
+    >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginHorizontal="12dp"
+            >
+
+                <TextView
+                    android:id="@+id/texto1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="840dp"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeMaxTextSize="32sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/gileade_tema_fundo_link"
+                    android:lineSpacingMultiplier="1.2"
+                    android:nestedScrollingEnabled="true"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="10dp"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="0"
+                    android:shadowDy="1"
+                    android:shadowRadius="0.3"
+                    android:text="Você está prestes a Fazer um Lix.
+Fazer um Lix vai além de praticar um ato sustentável, pois gera oportunidades de
+inclusão dígito-social a jovens da periferia da Amazônia por meio da educação tecnológica.
+O E-Lixo (Lixo Tecnológico) é descartado corretamente na Lixeira Smart,
+que irá manter um projeto social único, uma escola de tecnologia inclusiva sustentável, próximo ao lixão, na periferia da Amazônia, onde o jovem é o protagonista."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
